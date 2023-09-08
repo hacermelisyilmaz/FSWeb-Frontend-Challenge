@@ -1,5 +1,26 @@
+import { useContext } from "react";
+import Project from "../components/Project";
+import { TextContext } from "../context/TextProvider";
+import { ModeLangContext } from "../context/ModeLangProvider";
+
 function Projects() {
-  return <div className="Projects"></div>;
+  const textData = useContext(TextContext);
+  const { lang } = useContext(ModeLangContext);
+
+  const componentTexts = textData[lang].projects;
+
+  return (
+    <div className="Projects">
+      {componentTexts.projectarray.map((projectno) => {
+        return (
+          <Project
+            project={componentTexts[`project${projectno}`]}
+            key={projectno}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 export default Projects;
