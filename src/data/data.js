@@ -7,19 +7,22 @@ export const data = {
     },
     introduction: {
       greeting: "Merhaba! 👋",
-      p1: "Ben Melis. Full-stack geliştiriciyim. Sağlam ve ölçeklenebilir ön yüz web sayfaları oluşturabilirim. Haydi tanışalım!",
-      p2: "Şu an UX, UI ve Web Tasarım Projeleri için serbest çalışıyorum.",
-      p3: "Takımınıza davet edin ",
-      p4: " hacermelisyilmaz@gmail.com",
+      p1: "Ben Melis. Full-stack geliştiriciyim. Sağlam ve ölçeklenebilir ön yüz web sayfaları oluşturabilirim.",
+      p2: "Haydi tanışalım!",
+      p3: "Şu an UX, UI ve Web Tasarım Projeleri için serbest çalışıyorum.",
+      p4: "Takımınıza davet edin ",
+      p5: " hacermelisyilmaz@gmail.com",
     },
     skills: {
       title: "Beceriler",
-      js: "JAVASCRIPT",
-      react: "REACT",
-      redux: "REDUX",
-      node: "NODE",
-      vs: "VS CODE",
-      figma: "FIGMA",
+      skillicons: [
+        { name: "JAVASCRIPT", url: "../img/logos/js-logo.png" },
+        { name: "REACT", url: "../img/logos/react-logo.png" },
+        { name: "REDUX", url: "../img/logos/redux-logo.png" },
+        { name: "NODE", url: "../img/logos/node-logo.png" },
+        { name: "VS CODE", url: "../img/logos/vscode-logo.png" },
+        { name: "FIGMA", url: "../img/logos/figma-logo.png" },
+      ],
     },
     profile: {
       title: "Profil",
@@ -29,7 +32,7 @@ export const data = {
         birthdate: "23.06.1999",
         locationkey: "İkamet Şehri",
         location: "İstanbul",
-        edu: "Eğitim Durumu",
+        edukey: "Eğitim Durumu",
         edu: "Boğaziçi Üniversitesi, Mühendislik Fakültesi, 2018",
         rolekey: "Tercih Ettiği Rol",
         role: "Frontend, UI",
@@ -42,34 +45,37 @@ export const data = {
     },
     projects: {
       title: "Projeler",
-      randjokes: {
+      projectarray: [1, 2],
+      project1: {
         title: "Şakalar",
         p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Veniam aut poil laborum oliquam voluptatum nisi mollitia.",
-        tags: {
-          react: "react",
-          vercel: "vercel",
-          axios: "axios",
-          router: "router",
-        },
+        tags: [
+          { tag: "react" },
+          { tag: "vercel" },
+          { tag: "axios" },
+          { tag: "router" },
+        ],
         links: {
           git: "Github'da göster",
           redirect: "Uygulamaya git ",
         },
+        image: "../../public/img/project-images/project-random-3x.png",
       },
-      bored: {
+      project2: {
         title: "Sıkıldınız mı?",
         p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Veniam aut poil laborum oliquam voluptatum nisi mollitia. Mnima accusomus ratione solula aperiam sit voluptate? Dicto quod deserunt quam temporibus cumque magnam!",
-        tags: {
-          react: "react",
-          redux: "redux",
-          axios: "axios",
-          router: "router",
-          vercel: "vercel",
-        },
+        tags: [
+          { tag: "react" },
+          { tag: "redux" },
+          { tag: "axios" },
+          { tag: "router" },
+          { tag: "vercel" },
+        ],
         links: {
           git: "Github'da göster",
           redirect: "Uygulamaya git ",
         },
+        images: "../../public/img/project-images/project-bored-3x.png",
       },
     },
     footer: {
@@ -95,15 +101,14 @@ export const data = {
       p3: "Invite me to join your team ",
       p4: " hacermelisyilmaz@gmail.com",
     },
-    skills: {
-      title: "Skills",
-      js: "JAVASCRIPT",
-      react: "REACT",
-      redux: "REDUX",
-      node: "NODE",
-      vs: "VS CODE",
-      figma: "FIGMA",
-    },
+    skillicons: [
+      { name: "JAVASCRIPT", url: "../img/logos/js-logo.png" },
+      { name: "REACT", url: "../img/logos/react-logo.png" },
+      { name: "REDUX", url: "../img/logos/redux-logo.png" },
+      { name: "NODE", url: "../img/logos/node-logo.png" },
+      { name: "VS CODE", url: "../img/logos/vscode-logo.png" },
+      { name: "FIGMA", url: "../img/logos/figma-logo.png" },
+    ],
     profile: {
       title: "Profile",
       basicinfo: {
@@ -125,34 +130,37 @@ export const data = {
     },
     projects: {
       title: "Projects",
-      randjokes: {
+      projectarray: [1, 2],
+      project1: {
         title: "Random Jokes",
         p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Veniam aut poil laborum oliquam voluptatum nisi mollitia.",
-        tags: {
-          react: "react",
-          vercel: "vercel",
-          axios: "axios",
-          router: "router",
-        },
+        tags: [
+          { tag: "react" },
+          { tag: "vercel" },
+          { tag: "axios" },
+          { tag: "router" },
+        ],
         links: {
           git: "View on Github",
           redirect: "Go to app ",
         },
+        image: "../../public/img/project-images/project-random-3x.png",
       },
-      bored: {
+      project2: {
         title: "Are you bored?",
         p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Veniam aut poil laborum oliquam voluptatum nisi mollitia. Mnima accusomus ratione solula aperiam sit voluptate? Dicto quod deserunt quam temporibus cumque magnam!",
-        tags: {
-          react: "react",
-          redux: "redux",
-          axios: "axios",
-          router: "router",
-          vercel: "vercel",
-        },
+        tags: [
+          { tag: "react" },
+          { tag: "redux" },
+          { tag: "axios" },
+          { tag: "router" },
+          { tag: "vercel" },
+        ],
         links: {
           git: "View on Github",
           redirect: "Go to app ",
         },
+        images: "../../public/img/project-images/project-bored-3x.png",
       },
     },
     footer: {
