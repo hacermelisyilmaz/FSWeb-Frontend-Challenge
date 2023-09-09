@@ -12,16 +12,17 @@ export const data = {
       p3: "Şu an UX, UI ve Web Tasarım Projeleri için serbest çalışıyorum.",
       p4: "Takımınıza davet edin ",
       p5: " hacermelisyilmaz@gmail.com",
+      image: "img/intro/pp.png",
     },
     skills: {
       title: "Beceriler",
       skillicons: [
-        { name: "JAVASCRIPT", url: "../img/logos/js-logo.png" },
-        { name: "REACT", url: "../img/logos/react-logo.png" },
-        { name: "REDUX", url: "../img/logos/redux-logo.png" },
-        { name: "NODE", url: "../img/logos/node-logo.png" },
-        { name: "VS CODE", url: "../img/logos/vscode-logo.png" },
-        { name: "FIGMA", url: "../img/logos/figma-logo.png" },
+        { name: "JAVASCRIPT", url: "/img/logos/js-logo.png" },
+        { name: "REACT", url: "/img/logos/react-logo.png" },
+        { name: "REDUX", url: "/img/logos/redux-logo.png" },
+        { name: "NODE", url: "/img/logos/node-logo.png" },
+        { name: "VS CODE", url: "/img/logos/vscode-logo.png" },
+        { name: "FIGMA", url: "/img/logos/figma-logo.png" },
       ],
     },
     profile: {
@@ -59,7 +60,7 @@ export const data = {
           git: "Github'da göster",
           redirect: "Uygulamaya git ",
         },
-        image: "../../public/img/project-images/project-random-3x.png",
+        image: "/img/project-images/project-random-3x.png",
       },
       project2: {
         title: "Sıkıldınız mı?",
@@ -75,7 +76,7 @@ export const data = {
           git: "Github'da göster",
           redirect: "Uygulamaya git ",
         },
-        images: "../../public/img/project-images/project-bored-3x.png",
+        image: "/img/project-images/project-bored-3x.png",
       },
     },
     footer: {
@@ -96,19 +97,24 @@ export const data = {
     },
     introduction: {
       greeting: "Hi! 👋",
-      p1: "I'm Melis. I'm a full-stack developer. I can craft solid and scalable frontend products. Let's meet!",
-      p2: "Currently Freelancing for UX, UI, & Web Design Project.",
-      p3: "Invite me to join your team ",
-      p4: " hacermelisyilmaz@gmail.com",
+      p1: "I'm Melis. I'm a full-stack developer. I can craft solid and scalable frontend products.",
+      p2: "Let's meet!",
+      p3: "Currently Freelancing for UX, UI, & Web Design Project.",
+      p4: "Invite me to join your team ",
+      p5: " hacermelisyilmaz@gmail.com",
+      image: "img/intro/pp.png",
     },
-    skillicons: [
-      { name: "JAVASCRIPT", url: "../img/logos/js-logo.png" },
-      { name: "REACT", url: "../img/logos/react-logo.png" },
-      { name: "REDUX", url: "../img/logos/redux-logo.png" },
-      { name: "NODE", url: "../img/logos/node-logo.png" },
-      { name: "VS CODE", url: "../img/logos/vscode-logo.png" },
-      { name: "FIGMA", url: "../img/logos/figma-logo.png" },
-    ],
+    skills: {
+      title: "Skills",
+      skillicons: [
+        { name: "JAVASCRIPT", url: "/img/logos/js-logo.png" },
+        { name: "REACT", url: "/img/logos/react-logo.png" },
+        { name: "REDUX", url: "/img/logos/redux-logo.png" },
+        { name: "NODE", url: "/img/logos/node-logo.png" },
+        { name: "VS CODE", url: "/img/logos/vscode-logo.png" },
+        { name: "FIGMA", url: "/img/logos/figma-logo.png" },
+      ],
+    },
     profile: {
       title: "Profile",
       basicinfo: {
@@ -144,7 +150,7 @@ export const data = {
           git: "View on Github",
           redirect: "Go to app ",
         },
-        image: "../../public/img/project-images/project-random-3x.png",
+        image: "/img/project-images/project-random-3x.png",
       },
       project2: {
         title: "Are you bored?",
@@ -160,7 +166,7 @@ export const data = {
           git: "View on Github",
           redirect: "Go to app ",
         },
-        images: "../../public/img/project-images/project-bored-3x.png",
+        image: "/img/project-images/project-bored-3x.png",
       },
     },
     footer: {
