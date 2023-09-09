@@ -13,9 +13,9 @@ function Skills() {
     <div className="Skills">
       <h2>{componentTexts.title} </h2>
       <div id="skill-icons">
-        {skills.map((skill) => {
+        {skills.map((skill, i) => {
           return (
-            <div className="skill-icon">
+            <div className="skill-icon" key={i}>
               <img src={skill.url} alt={skill.name} />
               <p>{skill.name}</p>
             </div>
