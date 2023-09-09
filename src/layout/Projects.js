@@ -11,13 +11,8 @@ function Projects() {
 
   return (
     <div className="Projects">
-      {componentTexts.projectarray.map((projectno) => {
-        return (
-          <Project
-            project={componentTexts[`project${projectno}`]}
-            key={projectno}
-          />
-        );
+      {componentTexts.projectarray.map((pNo) => {
+        return <Project project={componentTexts[`project${pNo}`]} key={pNo} />;
       })}
     </div>
   );
