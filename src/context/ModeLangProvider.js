@@ -4,10 +4,10 @@ export const ModeLangContext = createContext();
 
 const ModeLangProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
-  const [lang, setLang] = useState("tr");
+  const [lang, setLang] = useState("eng");
 
   return (
-    <ModeLangContext.Provider value={{ darkMode, lang }}>
+    <ModeLangContext.Provider value={{ darkMode, setDarkMode, lang, setLang }}>
       {children}
     </ModeLangContext.Provider>
   );
