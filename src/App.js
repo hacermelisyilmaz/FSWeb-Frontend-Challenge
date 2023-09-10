@@ -11,14 +11,12 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div id="content" className="w-4/5 mx-auto my-8">
-        <Header />
-        <Introduction />
-        <Skills />
-        <Profile />
-        <Projects />
-        <Footer />
-      </div>
+      <Header />
+      <Introduction />
+      <Skills />
+      <Profile />
+      <Projects />
+      <Footer />
     </div>
   );
 }
