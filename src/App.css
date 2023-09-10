@@ -1,3 +1,151 @@
 .App {
   font-family: "Inter", sans-serif;
 }
+
+.component {
+  padding: 3rem 0;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-bottom: 2.25rem;
+  text-align: center;
+}
+
+.Header {
+  width: 100%;
+  padding-top: 3rem;
+}
+
+header {
+  width: 100%;
+  font-size: 0.94rem;
+  line-height: 1rem;
+  font-weight: 600;
+}
+
+#intro-left {
+  max-width: 60%;
+  flex-shrink: 1;
+}
+
+#greeting p {
+  font-weight: 600;
+  font-size: 1.88rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 1.3rem;
+}
+
+#greeting h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 4rem;
+  letter-spacing: 0.01em;
+}
+
+#intro-footer {
+  margin-top: 3.6rem;
+}
+
+#intro-footer-text {
+  margin-top: 5%;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+#intro-footer-text div {
+  gap: 0.5rem;
+}
+
+#icons {
+  gap: 1rem;
+}
+
+.Introduction img {
+  max-width: 22rem;
+  max-height: 22rem;
+  flex-shrink: 1;
+  margin-top: 3.5rem;
+}
+
+#skill-icons {
+  margin-top: 2rem;
+}
+
+.skill-icon {
+  text-align: center;
+  gap: 0.7rem;
+}
+
+.skill-icon img {
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+}
+
+.Profile {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.Profile h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+}
+
+#basic-info {
+  padding: 2.5rem;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
+#basic-info h3 {
+  margin-bottom: 2rem;
+}
+
+.info-key {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#project-card-container .Project:first-child {
+  background-color: #ddeefe;
+}
+
+#project-card-container .Project:nth-child(2) {
+  background-color: #d9f6f1;
+}
+
+.Project {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  /* padding: 2.5rem; */
+  width: 47%;
+  line-height: 1.5rem;
+}
+
+.Project h3 {
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.Project .tag {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 4.75rem;
+  padding: 6px 20px 10px 20px;
+}
+
+#links {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.Project img {
+}

@@ -13,11 +13,13 @@ function Projects() {
     <div className="Projects component">
       <div className="w-4/5 mx-auto">
         <h2>{componentTexts.title}</h2>
-        {componentTexts.projectarray.map((pNo) => {
-          return (
-            <Project project={componentTexts[`project${pNo}`]} key={pNo} />
-          );
-        })}
+        <div id="project-card-container" className="flex justify-between">
+          {componentTexts.projectarray.map((pNo) => {
+            return (
+              <Project project={componentTexts[`project${pNo}`]} key={pNo} />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
