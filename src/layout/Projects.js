@@ -13,13 +13,11 @@ function Projects() {
     <div className="Projects component">
       <div className="w-4/5 mx-auto">
         <h2>{componentTexts.title}</h2>
-        <div id="project-cards-container">
-          {componentTexts.projectarray.map((pNo) => {
-            return (
-              <Project project={componentTexts[`project${pNo}`]} key={pNo} />
-            );
-          })}
-        </div>
+        {componentTexts.projectarray.map((pNo) => {
+          return (
+            <Project project={componentTexts[`project${pNo}`]} key={pNo} />
+          );
+        })}
       </div>
     </div>
   );
