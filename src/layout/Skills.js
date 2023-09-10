@@ -10,17 +10,22 @@ function Skills() {
   const skills = componentTexts.skillicons;
 
   return (
-    <div className="Skills">
-      <h2>{componentTexts.title} </h2>
-      <div id="skill-icons">
-        {skills.map((skill, i) => {
-          return (
-            <div className="skill-icon" key={i}>
-              <img src={skill.url} alt={skill.name} />
-              <p>{skill.name}</p>
-            </div>
-          );
-        })}
+    <div className="Skills component w-full">
+      <div className="w-4/5 mx-auto">
+        <h2>{componentTexts.title} </h2>
+        <div
+          id="skill-icons"
+          className="text-textlightgray w-4/5 mx-auto flex flex-wrap justify-between"
+        >
+          {skills.map((skill, i) => {
+            return (
+              <div className="skill-icon flex flex-col items-center" key={i}>
+                <img src={skill.url} alt={skill.name} />
+                <p>{skill.name}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
