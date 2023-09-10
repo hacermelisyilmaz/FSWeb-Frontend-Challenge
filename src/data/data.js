@@ -123,7 +123,7 @@ export const data = {
         birthdate: "23.06.1999",
         locationkey: "City of Residence",
         location: "İstanbul",
-        edu: "Education",
+        edukey: "Education",
         edu: "Boğaziçi Üniversitesi, Mühendislik Fakültesi, 2018",
         rolekey: "Preferred Role",
         role: "Frontend, UI",
