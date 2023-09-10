@@ -10,10 +10,15 @@ function Projects() {
   const componentTexts = textData[lang].projects;
 
   return (
-    <div className="Projects">
-      {componentTexts.projectarray.map((pNo) => {
-        return <Project project={componentTexts[`project${pNo}`]} key={pNo} />;
-      })}
+    <div className="Projects component">
+      <div className="w-4/5 mx-auto">
+        <h2>{componentTexts.title}</h2>
+        {componentTexts.projectarray.map((pNo) => {
+          return (
+            <Project project={componentTexts[`project${pNo}`]} key={pNo} />
+          );
+        })}
+      </div>
     </div>
   );
 }
