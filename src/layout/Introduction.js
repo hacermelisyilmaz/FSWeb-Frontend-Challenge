@@ -13,7 +13,7 @@ function Introduction() {
   const componentTexts = textData[lang].introduction;
 
   return (
-    <div className="Introduction component bg-graybg">
+    <div className="Introduction component bg-light-bggray dark:bg-dark-bggray1">
       <div className="w-4/5 mx-auto flex place-content-between">
         <div id="intro-left">
           <div id="greeting">
@@ -41,14 +41,20 @@ function Introduction() {
               </a>
             </div>
             <div id="intro-footer-text">
-              <p>{componentTexts.p3}</p>
+              <p>
+                <span>{componentTexts.p31}</span>
+                <span className="text-primary">{componentTexts.colored1}</span>
+                <span>{componentTexts.p32}</span>
+                <span className="text-primary">{componentTexts.colored2}</span>
+                <span>{componentTexts.p33}</span>
+              </p>
               <div className="flex flex-wrap items-center">
                 <p>{componentTexts.p4}</p>
                 <FontAwesomeIcon
                   icon={faArrowRight}
                   style={{ color: "#000000" }}
                 />
-                <p>{componentTexts.p5}</p>
+                <p className="text-primary underline">{componentTexts.p5}</p>
               </div>
             </div>
           </div>

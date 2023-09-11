@@ -7,16 +7,22 @@ import Footer from "./layout/Footer";
 
 import "./style/reset.css";
 import "./App.css";
+import { useContext } from "react";
+import { ModeLangContext } from "./context/ModeLangProvider";
 
 function App() {
+  const { darkMode } = useContext(ModeLangContext);
+
   return (
-    <div className="App">
-      <Header />
-      <Introduction />
-      <Skills />
-      <Profile />
-      <Projects />
-      <Footer />
+    <div className={darkMode ? "App" : "App dark"}>
+      <div className="dark:text-dark-white">
+        <Header />
+        <Introduction />
+        <Skills />
+        <Profile />
+        <Projects />
+        <Footer />
+      </div>
     </div>
   );
 }

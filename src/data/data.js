@@ -9,7 +9,11 @@ export const data = {
       greeting: "Merhaba! 👋",
       p1: "Ben Melis. Full-stack geliştiriciyim. Sağlam ve ölçeklenebilir ön yüz web sayfaları oluşturabilirim.",
       p2: "Haydi tanışalım!",
-      p3: "Şu an UX, UI ve Web Tasarım Projeleri için serbest çalışıyorum.",
+      p31: "Şu an ",
+      colored1: "UX, UI ve Web Tasarım Projeleri",
+      p32: " için ",
+      colored2: "serbest",
+      p33: " çalışıyorum.",
       p4: "Takımınıza davet edin ",
       p5: " hacermelisyilmaz@gmail.com",
       image: "img/intro/pp.png",
@@ -50,12 +54,7 @@ export const data = {
       project1: {
         title: "Şakalar",
         p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Veniam aut poil laborum oliquam voluptatum nisi mollitia.",
-        tags: [
-          { tag: "react" },
-          { tag: "vercel" },
-          { tag: "axios" },
-          { tag: "router" },
-        ],
+        tags: ["react", "vercel", "axios", "router"],
         links: {
           git: "Github'da göster",
           redirect: "Uygulamaya git ",
@@ -65,13 +64,7 @@ export const data = {
       project2: {
         title: "Sıkıldınız mı?",
         p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Veniam aut poil laborum oliquam voluptatum nisi mollitia. Mnima accusomus ratione solula aperiam sit voluptate? Dicto quod deserunt quam temporibus cumque magnam!",
-        tags: [
-          { tag: "react" },
-          { tag: "redux" },
-          { tag: "axios" },
-          { tag: "router" },
-          { tag: "vercel" },
-        ],
+        tags: ["react", "redux", "axios", "router", "vercel"],
         links: {
           git: "Github'da göster",
           redirect: "Uygulamaya git ",
@@ -96,10 +89,15 @@ export const data = {
       language: "TÜRKÇE'YE GEÇ",
     },
     introduction: {
+      image: "img/intro/pp.png",
       greeting: "Hi! 👋",
       p1: "I'm Melis. I'm a full-stack developer. I can craft solid and scalable frontend products.",
       p2: "Let's meet!",
-      p3: "Currently Freelancing for UX, UI, & Web Design Project.",
+      p31: "Currently ",
+      colored1: "Freelancing",
+      p32: " for ",
+      colored2: "UX, UI, & Web Design",
+      p33: "Project.",
       p4: "Invite me to join your team ",
       p5: " hacermelisyilmaz@gmail.com",
       image: "img/intro/pp.png",
@@ -140,12 +138,7 @@ export const data = {
       project1: {
         title: "Random Jokes",
         p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Veniam aut poil laborum oliquam voluptatum nisi mollitia.",
-        tags: [
-          { tag: "react" },
-          { tag: "vercel" },
-          { tag: "axios" },
-          { tag: "router" },
-        ],
+        tags: ["react", "vercel", "axios", "router"],
         links: {
           git: "View on Github",
           redirect: "Go to app ",
@@ -155,13 +148,7 @@ export const data = {
       project2: {
         title: "Are you bored?",
         p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit Veniam aut poil laborum oliquam voluptatum nisi mollitia. Mnima accusomus ratione solula aperiam sit voluptate? Dicto quod deserunt quam temporibus cumque magnam!",
-        tags: [
-          { tag: "react" },
-          { tag: "redux" },
-          { tag: "axios" },
-          { tag: "router" },
-          { tag: "vercel" },
-        ],
+        tags: ["react", "redux", "axios", "router", "vercel"],
         links: {
           git: "View on Github",
           redirect: "Go to app ",

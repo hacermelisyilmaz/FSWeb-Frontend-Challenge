@@ -10,7 +10,7 @@ function Projects() {
   const componentTexts = textData[lang].projects;
 
   return (
-    <div className="Projects component">
+    <div className="Projects component dark:bg-dark-bggray2">
       <div className="w-4/5 mx-auto">
         <h2>{componentTexts.title}</h2>
         <div id="project-card-container" className="flex justify-between">

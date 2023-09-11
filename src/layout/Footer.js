@@ -9,16 +9,22 @@ function Footer() {
   const componentTexts = textData[lang].footer;
 
   return (
-    <div className="Footer component">
-      <div className="w-4/5 mx-auto">
+    <div className="Footer component dark:bg-dark-bggray2">
+      <footer className="mx-auto pt-12 pb-24 flex items-center justify-between">
         <h1>{componentTexts.title}</h1>
-        <div id="footer-links">
-          <a>{componentTexts.links.git} </a>
+        <div id="footer-links" className="flex flex-col">
+          <a className="text-light-cerulean dark:text-dark-ornamentblue">
+            {componentTexts.links.git}{" "}
+          </a>
           <a>{componentTexts.links.blog} </a>
-          <a>{componentTexts.links.linkedin} </a>
-          <a>{componentTexts.links.email} </a>
+          <a className="text-light-blue dark:text-dark-turquoise">
+            {componentTexts.links.linkedin}{" "}
+          </a>
+          <a className="text-light-textdarkpink dark:text-dark-textdarkpink">
+            {componentTexts.links.email}{" "}
+          </a>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }

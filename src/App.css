@@ -3,7 +3,7 @@
 }
 
 .component {
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 
 h2 {
@@ -114,14 +114,21 @@ header {
   background-color: #ddeefe;
 }
 
+.dark #project-card-container .Project:first-child {
+  background-color: #2d3235;
+}
+
 #project-card-container .Project:nth-child(2) {
   background-color: #d9f6f1;
+}
+
+.dark #project-card-container .Project:nth-child(2) {
+  background-color: #495351;
 }
 
 .Project {
   border: 1px solid transparent;
   border-radius: 12px;
-  /* padding: 2.5rem; */
   width: 47%;
   line-height: 1.5rem;
 }
@@ -136,8 +143,7 @@ header {
 .Project .tag {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  background-color: white;
-  border: 1px solid white;
+  border: 1px solid transparent;
   border-radius: 4.75rem;
   padding: 6px 20px 10px 20px;
 }
@@ -147,5 +153,23 @@ header {
   font-size: 1.25rem;
 }
 
-.Project img {
+footer {
+  width: 56%;
+  font-size: 2.6rem;
+}
+
+footer h1 {
+  text-align: right;
+  max-width: 70%;
+  line-height: 4rem;
+}
+
+#footer-links {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+
+.dark .Header header label div::after {
+  background-image: url();
 }

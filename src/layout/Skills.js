@@ -10,12 +10,12 @@ function Skills() {
   const skills = componentTexts.skillicons;
 
   return (
-    <div className="Skills component w-full">
+    <div className="Skills component w-full dark:text-dark-ornamentgray dark:bg-dark-bggray2">
       <div className="w-4/5 mx-auto">
         <h2>{componentTexts.title} </h2>
         <div
           id="skill-icons"
-          className="text-textlightgray w-4/5 mx-auto flex flex-wrap justify-between"
+          className="text-light-textlightgray w-4/5 mx-auto flex flex-wrap justify-between"
         >
           {skills.map((skill, i) => {
             return (

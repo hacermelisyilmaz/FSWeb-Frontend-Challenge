@@ -9,7 +9,7 @@ function Header() {
   const componentTexts = textData[lang].header;
 
   return (
-    <div className="Header component text-textlightgray bg-graybg">
+    <div className="Header component text-light-textlightgray bg-light-bggray dark:bg-dark-bggray1">
       <header className="w-4/5 mx-auto flex justify-end">
         <label
           id="mode-toggler"
@@ -21,11 +21,12 @@ function Header() {
             onChange={() => setDarkMode(!darkMode)}
             className="sr-only peer"
           />
-          <div className="w-8 h-3 bg-gray-200  rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-4 peer-checked:after:border-white after:content-[''] after:absolute after:top-[20%] after:left-[4px] after:bg-amber after:border-amber after:border after:rounded-full after:h-2 after:w-2 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+          <div className="w-8 h-3 rounded-full peer dark:bg-dark-black peer-checked:after:translate-x-4 after:content-[''] after:absolute after:top-[25%] after:left-[4px] after:bg-light-amber after:border-light-amber after:border after:rounded-full after:h-2 after:w-2 after:transition-all peer-checked:bg-light-primary"></div>
           <span className="ml-1">
             {darkMode ? componentTexts.darkmode : componentTexts.lightmode}
           </span>
         </label>
+
         <span className="ml-2"> | </span>
         <span className="ml-2">{componentTexts.language}</span>
       </header>
