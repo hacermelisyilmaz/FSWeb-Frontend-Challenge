@@ -39,10 +39,21 @@ function Header() {
           {componentTexts.language}
         </span>
       </header>
-      <img
-        className="ornament absolute -z-[1] top-0 left-[33%] fill-ornamentgray dark:fill-dark-ornamentdarkgray"
-        src="../../img/ornaments/Ellipse 10.svg"
-      />
+      <svg
+        className="ornament absolute -z-[1] top-0 left-[33%]"
+        width="111"
+        height="66"
+        viewBox="0 0 111 66"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="55.5"
+          cy="10.5"
+          r="55.5"
+          fill={darkMode ? "#D9D9D9" : "#525252"}
+        />
+      </svg>
     </div>
   );
 }

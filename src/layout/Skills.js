@@ -4,7 +4,7 @@ import { ModeLangContext } from "../context/ModeLangProvider";
 
 function Skills() {
   const textData = useContext(TextContext);
-  const { lang } = useContext(ModeLangContext);
+  const { lang, darkMode } = useContext(ModeLangContext);
 
   const componentTexts = textData[lang].skills;
   const skills = componentTexts.skillicons;
@@ -30,10 +30,22 @@ function Skills() {
           })}
         </div>
       </div>
-      <img
-        className="ornament absolute -z-[1] -top-[60px] right-[15rem]"
-        src="../../img/ornaments/Ellipse 11.svg"
-      />
+      <svg
+        className="ornament absolute -z-[1] -top-[60px] right-[15rem] sm:hidden"
+        width="121"
+        height="121"
+        viewBox="0 0 121 121"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="60.5"
+          cy="60.5"
+          r="50"
+          stroke={darkMode ? "#D9D9D9" : "#525252"}
+          stroke-width="21"
+        />
+      </svg>
     </div>
   );
 }

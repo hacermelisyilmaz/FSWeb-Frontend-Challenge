@@ -34,7 +34,7 @@ function Profile() {
           </div>
         </div>
 
-        <div className="about-me w-2/3 p-10 relative z-0 flex flex-col gap-5">
+        <div className="about-me w-2/3 p-10 relative z-0 flex flex-col gap-5 sm:w-full">
           <h3>{aboutTexts.title}</h3>
           <p>{aboutTexts.p1}</p>
           <p>{aboutTexts.p2}</p>

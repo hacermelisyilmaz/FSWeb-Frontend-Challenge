@@ -17,7 +17,7 @@ function Introduction() {
     <div className="Introduction component relative z-0 bg-light-bggray dark:bg-dark-bggray1">
       <div className="w-4/5 mx-auto flex place-content-between sm:flex-col sm:items-center sm:text-center">
         <div id="intro-left" className="w-max-3/5 sm:w-full">
-          <div id="greeting" className="">
+          <div id="greeting">
             <p>{componentTexts.greeting}</p>
             <div className="relative z-[1]">
               <h1>{componentTexts.p1}</h1>
@@ -72,14 +72,26 @@ function Introduction() {
         </div>
         <img src={componentTexts.image} />
       </div>
-      <img
-        className="ornament absolute -z-[1] top-[19%] left-[7.25rem]"
-        src="../../img/ornaments/Rectangle 2.svg"
-      />
-      <img
-        className="ornament absolute -z-[1] top-[64%] right-0"
-        src="../../img/ornaments/Rectangle 18.svg"
-      />
+      <svg
+        className="ornament absolute -z-[1] top-[26%] left-[7.25rem]"
+        width="148"
+        height="31"
+        viewBox="0 0 148 31"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="148" height="31" rx="4" fill="#E92577" />
+      </svg>
+      <svg
+        className="ornament absolute -z-[1] top-[68%] right-0"
+        width="124"
+        height="59"
+        viewBox="0 0 124 59"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="217" height="59" rx="29.5" fill="#EA2678" />
+      </svg>
     </div>
   );
 }
