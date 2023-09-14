@@ -22,6 +22,11 @@ header {
   font-weight: 600;
 }
 
+header:last-child {
+  content: "TÜRKÇE";
+  color: "#E92577";
+}
+
 #intro-left {
   flex-shrink: 1;
 }

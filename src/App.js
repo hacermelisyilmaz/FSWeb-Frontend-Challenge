@@ -29,13 +29,34 @@ function App() {
         setLoaded(true);
       })
       .catch((error) => {
-        toast(error.message);
+        toast.error(error.message, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
       });
   }, []);
 
   return (
-    isLoaded && (
-      <div className={darkMode ? "App" : "App dark"}>
+    <div className={darkMode ? "App" : "App dark"}>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+      {isLoaded && (
         <TextContext.Provider value={textData}>
           <div className="dark:text-dark-white">
             <Header />
@@ -45,10 +66,9 @@ function App() {
             <Projects />
             <Footer />
           </div>
-          <ToastContainer />
         </TextContext.Provider>
-      </div>
-    )
+      )}
+    </div>
   );
 }
 

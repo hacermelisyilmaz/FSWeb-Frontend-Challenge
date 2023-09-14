@@ -3,7 +3,8 @@ export const data = {
     header: {
       darkmode: "KARANLIK MOD",
       lightmode: "AYDINLIK MOD",
-      language: "SWITCH TO ENGLISH",
+      languagetxt: "SWITCH TO ",
+      language: "ENGLISH",
     },
     introduction: {
       greeting: "Merhaba! 👋",
@@ -86,7 +87,8 @@ export const data = {
     header: {
       darkmode: "DARK MODE",
       lightmode: "LIGHT MODE",
-      language: "TÜRKÇE'YE GEÇ",
+      language: "TÜRKÇE",
+      languagetxt: "YE GEÇ",
     },
     introduction: {
       image: "img/intro/pp.png",
@@ -120,9 +122,9 @@ export const data = {
         birthdatekey: "Date of Birth",
         birthdate: "23.06.1999",
         locationkey: "City of Residence",
-        location: "İstanbul",
+        location: "Istanbul",
         edukey: "Education",
-        edu: "Boğaziçi Üniversitesi, Mühendislik Fakültesi, 2018",
+        edu: "Boğaziçi University, Faculty of Engineering, 2018",
         rolekey: "Preferred Role",
         role: "Frontend, UI",
       },

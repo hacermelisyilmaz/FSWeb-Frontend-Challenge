@@ -35,9 +35,24 @@ function Header() {
         </label>
 
         <span className="ml-2 sm:hidden"> | </span>
-        <span className="ml-2" onClick={changeLang}>
-          {componentTexts.language}
-        </span>
+        {lang === "en" && (
+          <span className="ml-2" onClick={changeLang}>
+            <span className="text-light-primary font-normal cursor-pointer">
+              {" "}
+              {componentTexts.language}
+            </span>
+            {componentTexts.languagetxt}
+          </span>
+        )}
+        {lang === "tr" && (
+          <span className="ml-2" onClick={changeLang}>
+            {componentTexts.languagetxt}
+            <span className="text-light-primary font-normal cursor-pointer">
+              {" "}
+              {componentTexts.language}
+            </span>
+          </span>
+        )}
       </header>
       <svg
         className="ornament absolute -z-[1] top-0 left-[33%]"

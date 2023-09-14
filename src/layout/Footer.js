@@ -16,11 +16,17 @@ function Footer() {
           id="footer-links"
           className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-8 sm:mt-8"
         >
-          <a className="text-light-cerulean dark:text-dark-ornamentblue">
+          <a
+            className="text-light-cerulean dark:text-dark-ornamentblue"
+            href="https://github.com/hacermelisyilmaz"
+          >
             {componentTexts.links.git}{" "}
           </a>
           <a>{componentTexts.links.blog} </a>
-          <a className="text-light-blue dark:text-dark-turquoise">
+          <a
+            className="text-light-blue dark:text-dark-turquoise"
+            href="https://www.linkedin.com/in/hacermelisyilmaz/"
+          >
             {componentTexts.links.linkedin}{" "}
           </a>
           <a className="text-light-textdarkpink dark:text-dark-textdarkpink">

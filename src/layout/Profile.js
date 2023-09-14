@@ -38,16 +38,28 @@ function Profile() {
           <h3>{aboutTexts.title}</h3>
           <p>{aboutTexts.p1}</p>
           <p>{aboutTexts.p2}</p>
-          <img
-            className="ornament absolute -z-[1] top-[16.5%] left-[7%]"
-            src="../../img/ornaments/Rectangle 39.svg"
-          />
+          <svg
+            className="ornament absolute -z-[1] top-[17%] left-[7%]"
+            width="90"
+            height="18"
+            viewBox="0 0 90 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="90" height="18" rx="4" fill="#82BBFF" />
+          </svg>
         </div>
       </div>
-      <img
-        className="ornament absolute -z-[1] -top-[7%] right-0"
-        src="../../img/ornaments/Ellipse 12.svg"
-      />
+      <svg
+        className="ornament absolute -z-[1] -top-[6%] right-0"
+        width="78"
+        height="121"
+        viewBox="0 0 78 121"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="60.5" cy="60.5" r="50" stroke="#EA2678" stroke-width="21" />
+      </svg>
     </div>
   );
 }
