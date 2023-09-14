@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { TextContext } from "../context/TextProvider";
+import { TextContext } from "../context/TextContext";
 import { ModeLangContext } from "../context/ModeLangProvider";
 
 function Skills() {
@@ -10,16 +10,19 @@ function Skills() {
   const skills = componentTexts.skillicons;
 
   return (
-    <div className="Skills component w-full dark:text-dark-ornamentgray dark:bg-dark-bggray2">
+    <div className="Skills component relative z-0 w-full dark:text-dark-ornamentgray dark:bg-dark-bggray2">
       <div className="w-4/5 mx-auto">
         <h2>{componentTexts.title} </h2>
         <div
           id="skill-icons"
-          className="text-light-textlightgray w-4/5 mx-auto flex flex-wrap justify-between"
+          className="text-light-textlightgray w-4/5 mx-auto mt-8 flex flex-wrap justify-between sm:justify-center sm:items-center sm:gap-4"
         >
           {skills.map((skill, i) => {
             return (
-              <div className="skill-icon flex flex-col items-center" key={i}>
+              <div
+                className="skill-icon flex flex-col items-center text-center gap-3"
+                key={i}
+              >
                 <img src={skill.url} alt={skill.name} />
                 <p>{skill.name}</p>
               </div>
@@ -27,6 +30,10 @@ function Skills() {
           })}
         </div>
       </div>
+      <img
+        className="ornament absolute -z-[1] -top-[60px] right-[15rem]"
+        src="../../img/ornaments/Ellipse 11.svg"
+      />
     </div>
   );
 }

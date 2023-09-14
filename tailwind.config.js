@@ -3,6 +3,9 @@ module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{html,js}"],
   theme: {
+    screens: {
+      sm: { max: "700px" },
+    },
     colors: {
       light: {
         primary: "#E92577",

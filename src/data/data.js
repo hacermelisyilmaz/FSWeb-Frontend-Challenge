@@ -7,7 +7,7 @@ export const data = {
     },
     introduction: {
       greeting: "Merhaba! 👋",
-      p1: "Ben Melis. Full-stack geliştiriciyim. Sağlam ve ölçeklenebilir ön yüz web sayfaları oluşturabilirim.",
+      p1: "Ben Melis. Full-stack web yazılımcıyım. Sağlam ve ölçeklenebilir arayüzler oluşturabiliyorum.",
       p2: "Haydi tanışalım!",
       p31: "Şu an ",
       colored1: "UX, UI ve Web Tasarım Projeleri",
@@ -82,7 +82,7 @@ export const data = {
       },
     },
   },
-  eng: {
+  en: {
     header: {
       darkmode: "DARK MODE",
       lightmode: "LIGHT MODE",
@@ -97,7 +97,7 @@ export const data = {
       colored1: "Freelancing",
       p32: " for ",
       colored2: "UX, UI, & Web Design",
-      p33: "Project.",
+      p33: " Project.",
       p4: "Invite me to join your team ",
       p5: " hacermelisyilmaz@gmail.com",
       image: "img/intro/pp.png",

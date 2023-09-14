@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { TextContext } from "../context/TextProvider";
+import { TextContext } from "../context/TextContext";
 import { ModeLangContext } from "../context/ModeLangProvider";
 
 function Footer() {
@@ -10,9 +10,12 @@ function Footer() {
 
   return (
     <div className="Footer component dark:bg-dark-bggray2">
-      <footer className="mx-auto pt-12 pb-24 flex items-center justify-between">
-        <h1>{componentTexts.title}</h1>
-        <div id="footer-links" className="flex flex-col">
+      <footer className="relative mx-auto pt-12 pb-24 flex items-center justify-between sm:flex-col sm:w-3/4">
+        <h1 className="text-right sm:text-center">{componentTexts.title}</h1>
+        <div
+          id="footer-links"
+          className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-8 sm:mt-8"
+        >
           <a className="text-light-cerulean dark:text-dark-ornamentblue">
             {componentTexts.links.git}{" "}
           </a>
@@ -24,6 +27,10 @@ function Footer() {
             {componentTexts.links.email}{" "}
           </a>
         </div>
+        <img
+          className="ornament absolute -z-[1] top-[33%] left-[26%]"
+          src="../../img/ornaments/Rectangle 40.svg"
+        />
       </footer>
     </div>
   );

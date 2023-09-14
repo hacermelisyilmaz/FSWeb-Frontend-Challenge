@@ -1,9 +1,10 @@
 import { useContext } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import { TextContext } from "../context/TextProvider";
+import { TextContext } from "../context/TextContext";
 import { ModeLangContext } from "../context/ModeLangProvider";
 
 function Introduction() {
@@ -13,54 +14,72 @@ function Introduction() {
   const componentTexts = textData[lang].introduction;
 
   return (
-    <div className="Introduction component bg-light-bggray dark:bg-dark-bggray1">
-      <div className="w-4/5 mx-auto flex place-content-between">
-        <div id="intro-left">
-          <div id="greeting">
+    <div className="Introduction component relative z-0 bg-light-bggray dark:bg-dark-bggray1">
+      <div className="w-4/5 mx-auto flex place-content-between sm:flex-col sm:items-center sm:text-center">
+        <div id="intro-left" className="w-max-3/5 sm:w-full">
+          <div id="greeting" className="">
             <p>{componentTexts.greeting}</p>
-            <div>
+            <div className="relative z-[1]">
               <h1>{componentTexts.p1}</h1>
               <h1>{componentTexts.p2}</h1>
             </div>
           </div>
           <div id="intro-footer">
-            <div id="icons" className="flex">
+            <div id="icons" className="flex gap-4 sm:justify-center">
               <a href="https://www.linkedin.com/in/hacermelisyilmaz/">
                 <FontAwesomeIcon
                   icon={faLinkedinIn}
                   size="2x"
-                  style={{ color: "#0a0a14" }}
+                  className="text-light-textdarkgray dark:text-dark-ornamentgray"
                 />
               </a>
               <a href="https://github.com/hacermelisyilmaz">
                 <FontAwesomeIcon
                   icon={faGithub}
                   size="2x"
-                  style={{ color: "#0a0a14" }}
+                  className="text-light-textdarkgray dark:text-dark-ornamentgray"
                 />
               </a>
             </div>
             <div id="intro-footer-text">
               <p>
                 <span>{componentTexts.p31}</span>
-                <span className="text-primary">{componentTexts.colored1}</span>
+                <span className="text-light-textdarkpink">
+                  {componentTexts.colored1}
+                </span>
                 <span>{componentTexts.p32}</span>
-                <span className="text-primary">{componentTexts.colored2}</span>
+                <span className="text-light-textdarkpink">
+                  {componentTexts.colored2}
+                </span>
                 <span>{componentTexts.p33}</span>
               </p>
-              <div className="flex flex-wrap items-center">
+              <div className="flex flex-wrap items-center gap-2 sm:flex-col">
                 <p>{componentTexts.p4}</p>
                 <FontAwesomeIcon
                   icon={faArrowRight}
-                  style={{ color: "#000000" }}
+                  className="text-light-textdarkgray dark:text-dark-ornamentgray sm:hidden"
                 />
-                <p className="text-primary underline">{componentTexts.p5}</p>
+                <FontAwesomeIcon
+                  icon={faArrowDown}
+                  className="text-light-textdarkgray dark:text-dark-ornamentgray hidden sm:block"
+                />
+                <p className="text-light-textdarkpink underline">
+                  {componentTexts.p5}
+                </p>
               </div>
             </div>
           </div>
         </div>
         <img src={componentTexts.image} />
       </div>
+      <img
+        className="ornament absolute -z-[1] top-[19%] left-[7.25rem]"
+        src="../../img/ornaments/Rectangle 2.svg"
+      />
+      <img
+        className="ornament absolute -z-[1] top-[64%] right-0"
+        src="../../img/ornaments/Rectangle 18.svg"
+      />
     </div>
   );
 }

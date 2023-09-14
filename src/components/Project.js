@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Project({ project }) {
   return (
-    <div className="Project">
+    <div className="Project w-[47%] sm:w-full">
       <h3 className="px-10 pt-11">{project.title}</h3>
-      <div className="h-full flex flex-col justify-between gap-1">
+      <div className="h-full flex flex-col justify-between gap-8">
         <p className="px-10">{project.p1}</p>
         <div id="tags" className="flex flex-wrap gap-[9px] px-10">
           {project.tags.map((tag, i) => {

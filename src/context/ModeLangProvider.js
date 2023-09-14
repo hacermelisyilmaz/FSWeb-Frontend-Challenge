@@ -1,10 +1,14 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
+import useLocalStorage from "../localstorage/useLocalStorage";
 
 export const ModeLangContext = createContext();
 
 const ModeLangProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
-  const [lang, setLang] = useState("eng");
+  const [darkMode, setDarkMode] = useLocalStorage("gece-modu", true);
+  const [lang, setLang] = useLocalStorage(
+    "language",
+    navigator.language.split("-")[0]
+  );
 
   return (
     <ModeLangContext.Provider value={{ darkMode, setDarkMode, lang, setLang }}>
