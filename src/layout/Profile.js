@@ -58,7 +58,7 @@ function Profile() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="60.5" cy="60.5" r="50" stroke="#EA2678" stroke-width="21" />
+        <circle cx="60.5" cy="60.5" r="50" stroke="#EA2678" strokeWidth="21" />
       </svg>
     </div>
   );

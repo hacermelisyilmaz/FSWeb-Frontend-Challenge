@@ -43,7 +43,7 @@ function Skills() {
           cy="60.5"
           r="50"
           stroke={darkMode ? "#D9D9D9" : "#525252"}
-          stroke-width="21"
+          strokeWidth="21"
         />
       </svg>
     </div>
