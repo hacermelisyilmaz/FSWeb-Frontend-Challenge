@@ -15,7 +15,7 @@ function Introduction() {
 
   return (
     <div className="Introduction component relative z-0 bg-light-bggray dark:bg-dark-bggray1">
-      <div className="w-4/5 mx-auto flex place-content-between sm:flex-col sm:items-center sm:text-center">
+      <div className="w-4/5 mx-auto flex content-between gap-11 sm:flex-col sm:items-center sm:text-center">
         <div id="intro-left" className="w-max-3/5 sm:w-full">
           <div id="greeting">
             <p>{componentTexts.greeting}</p>
