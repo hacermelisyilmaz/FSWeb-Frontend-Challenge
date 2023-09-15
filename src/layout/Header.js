@@ -37,7 +37,7 @@ function Header() {
         <span className="ml-2 sm:hidden"> | </span>
         {lang === "en" && (
           <span className="ml-2" onClick={changeLang}>
-            <span className="text-light-primary font-normal cursor-pointer">
+            <span className="text-light-primary cursor-pointer">
               {" "}
               {componentTexts.language}
             </span>
@@ -47,7 +47,7 @@ function Header() {
         {lang === "tr" && (
           <span className="ml-2" onClick={changeLang}>
             {componentTexts.languagetxt}
-            <span className="text-light-primary font-normal cursor-pointer">
+            <span className="text-light-primary cursor-pointer">
               {" "}
               {componentTexts.language}
             </span>
