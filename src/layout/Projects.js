@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import Project from "../components/Project";
 import { TextContext } from "../context/TextContext";
 import { ModeLangContext } from "../context/ModeLangProvider";
+import Project from "../components/Project";
 
 function Projects() {
   const textData = useContext(TextContext);
