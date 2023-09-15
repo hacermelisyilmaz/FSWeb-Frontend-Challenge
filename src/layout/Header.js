@@ -5,8 +5,9 @@ import { ModeLangContext } from "../context/ModeLangProvider";
 function Header() {
   const textData = useContext(TextContext);
   const { darkMode, setDarkMode, lang, setLang } = useContext(ModeLangContext);
+
   const componentTexts = textData[lang].header;
-  console.log("header:", textData);
+
   const changeDarkMode = () => {
     setDarkMode(!darkMode);
   };
@@ -35,6 +36,7 @@ function Header() {
         </label>
 
         <span className="ml-2 sm:hidden"> | </span>
+
         {lang === "en" && (
           <span className="ml-2" onClick={changeLang}>
             <span className="text-light-primary cursor-pointer">
@@ -54,6 +56,7 @@ function Header() {
           </span>
         )}
       </header>
+
       <svg
         className="ornament absolute -z-[1] top-0 left-[33%]"
         width="111"
